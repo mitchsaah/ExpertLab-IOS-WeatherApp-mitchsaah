@@ -30,5 +30,25 @@ class WeatherService {
             ]
             return components?.url
         }
+    
+    func fetchWeather(for city: String, completion: @escaping (WeatherResponse?) -> Void) {
+        // URL
+        guard let url = makeRequestURL(for: city) else {
+            completion(nil)
+            return
+        }
+        
+        // API call w/ Alamofire
+        AF.request(url).responseDecodable(of: WeatherResponse.self) { response in
+            switch response.result {
+            case .success(let weatherResponse):
+                // Completion handler (passed from decoded object)
+                completion(weatherResponse)
+            case .failure:
+                // Error handling
+                completion(nil)
+            }
+        }
+    }
 }
 
