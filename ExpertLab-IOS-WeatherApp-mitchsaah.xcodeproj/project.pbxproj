@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13B25CE42CDE37BC001D23B5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 13B25CE32CDE37BC001D23B5 /* Alamofire */; };
-		13B25CE62CDE37BC001D23B5 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 13B25CE52CDE37BC001D23B5 /* AlamofireDynamic */; };
+		1371BE622CDFA9D1003E430A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1371BE612CDFA9D1003E430A /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B25CE42CDE37BC001D23B5 /* Alamofire in Frameworks */,
-				13B25CE62CDE37BC001D23B5 /* AlamofireDynamic in Frameworks */,
+				1371BE622CDFA9D1003E430A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,8 +70,7 @@
 			);
 			name = "ExpertLab-IOS-WeatherApp-mitchsaah";
 			packageProductDependencies = (
-				13B25CE32CDE37BC001D23B5 /* Alamofire */,
-				13B25CE52CDE37BC001D23B5 /* AlamofireDynamic */,
+				1371BE612CDFA9D1003E430A /* Alamofire */,
 			);
 			productName = "ExpertLab-IOS-WeatherApp-mitchsaah";
 			productReference = 13B25CD12CDE3733001D23B5 /* ExpertLab-IOS-WeatherApp-mitchsaah.app */;
@@ -104,7 +101,7 @@
 			mainGroup = 13B25CC82CDE3733001D23B5;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				13B25CE22CDE37BC001D23B5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1371BE602CDFA9D1003E430A /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 13B25CD22CDE3733001D23B5 /* Products */;
@@ -336,7 +333,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		13B25CE22CDE37BC001D23B5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		1371BE602CDFA9D1003E430A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -347,15 +344,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		13B25CE32CDE37BC001D23B5 /* Alamofire */ = {
+		1371BE612CDFA9D1003E430A /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 13B25CE22CDE37BC001D23B5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 1371BE602CDFA9D1003E430A /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
-		};
-		13B25CE52CDE37BC001D23B5 /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 13B25CE22CDE37BC001D23B5 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
