@@ -31,7 +31,11 @@ struct ContentView: View {
 
                 // Weather Button
                 Button(action: {
-                    viewModel.fetchWeather(for: cityInput)
+                    viewModel.fetchWeather(for: cityInput) {success in
+                        if success {
+                            cityInput = ""
+                        }
+                    }
                 }) {
                     Text("Show Weather Details")
                         .font(.headline)

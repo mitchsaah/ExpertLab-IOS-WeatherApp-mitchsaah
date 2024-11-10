@@ -8,13 +8,14 @@ class WeatherViewModel: ObservableObject {
     
     private let weatherService = WeatherService()
     
-    func fetchWeather(for city: String) {
+    func fetchWeather(for city: String, completion: @escaping (Bool) -> Void) {
         weatherService.fetchWeather(for: city) { [weak self] response in
             guard let response = response else {
                 DispatchQueue.main.async {
                     self?.cityName = "Error"
                     self?.temperature = "--"
                     self?.description = "Could not load weather data"
+                    completion(false)
                 }
                 return
             }
@@ -24,6 +25,7 @@ class WeatherViewModel: ObservableObject {
                 self?.cityName = response.name
                 self?.temperature = "\(response.main.temp)°C"
                 self?.description = response.weather.first?.description.capitalized ?? ""
+                completion(true)
             }
         }
     }
